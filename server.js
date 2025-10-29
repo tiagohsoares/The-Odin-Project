@@ -1,6 +1,4 @@
-/*
-
- import http from 'http';
+import http from 'http';
 import url from 'url';
 import fs from 'fs/promises';
 import path from 'path';
@@ -37,7 +35,7 @@ const server = http.createServer(async (req, res) => {
     res.end(data);
 
   } catch (error) {
-    console.error(err);
+    console.error(error);
     res.statusCode = 500;
     res.setHeader('Content-Type', 'text/plain');
     res.end('Method not allowed');
@@ -47,4 +45,4 @@ const server = http.createServer(async (req, res) => {
 server.listen(PORT, () => {
   console.log(`Server running on ${PORT}`);
 });
-*/
+
